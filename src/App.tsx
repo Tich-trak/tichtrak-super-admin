@@ -1,5 +1,13 @@
+import React from 'react';
+import './App.css';
+import DashboardLayout from './screens/DashboardLayout/DashboardLayout';
+
 function App() {
-  return <div>Welcome to TichTrak</div>;
+  return (
+    <div>
+      <DashboardLayout />
+    </div>
+  );
 }
 
 export default App;
