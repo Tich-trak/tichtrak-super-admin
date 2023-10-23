@@ -1,0 +1,73 @@
+.container {
+    margin: auto;
+}
+
+.container > section {
+    margin-block: 2rem;
+    margin-inline-start: 2rem;
+}
+
+.info, .info2, .iconContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.info > span > h1 {
+    font-size: 2.427rem;
+    font-weight: 700;
+    color: var(--color-main-primary);
+}
+
+.info > span:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    margin-block: auto;
+}
+
+.info2 > div {
+    width: 5.2rem;
+    height: 5.2rem;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.info2 > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.info2 > span > h1 {
+    font-size: 1.5rem;
+}
+
+.dropdown {
+    margin: auto;
+}
+
+// .svgOverview {
+//     fill: #ffffff !important;
+// }
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-block-start: 2rem;
+}
+
+.icons path {
+    // fill: #ffffff;
+    // stroke: black;
+    width: 2rem;
+    height: 2rem;
+}
+
+.icons > div {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons > div > span:nth-child(2) {
+    margin-block: auto;
+}
