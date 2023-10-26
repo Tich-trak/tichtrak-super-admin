@@ -1,10 +1,28 @@
 .container {
-    margin: auto;
+    margin-inline: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
 }
 
-.container > section {
+.container::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.container > section > section {
     margin-block: 2rem;
     margin-inline-start: 2rem;
+}
+
+.container section:last-child {
+    margin-inline-start: 2rem;
+    margin-block-end: 2rem;
+}
+
+.footer {
+    margin-block-end: 0;
 }
 
 .info, .info2, .iconContainer {
@@ -45,20 +63,17 @@
     margin: auto;
 }
 
-// .svgOverview {
-//     fill: #ffffff !important;
-// }
-
 .icons {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     margin-block-start: 2rem;
 }
 
+.icons h1 {
+    font-size: 1rem;
+}
+
 .icons path {
-    // fill: #ffffff;
-    // stroke: black;
     width: 2rem;
     height: 2rem;
 }
@@ -66,8 +81,61 @@
 .icons > div {
     display: flex;
     gap: 1rem;
+    padding: 1rem 1rem;
+    margin-inline-end: 1rem;
+}
+
+.icons .dropdown {
+    margin-inline-end: 0;
+}
+
+.icons > div:hover, icons > div:focus {
+    background-color: var(--color-main-primary);
+    border-radius: 1rem;
+    color: var(--color-main-bg);
+    cursor: pointer; 
+}
+
+.icons > div:hover path {
+    //fill: var(--color-main-bg);
+    stroke: var(--color-main-bg);
 }
 
 .icons > div > span:nth-child(2) {
     margin-block: auto;
+}
+
+li {
+    list-style: none;
+    margin-block: 1.5rem;
+    padding: 1rem;
+
+    &:hover {
+        background-color: #D9D9FF;
+        border-radius: 1rem;  
+        color: var(--color-main-primary);
+        cursor: pointer;
+        font-weight: 500;
+    }
+   
+}
+
+ul {
+    margin-block-start: 0;
+    margin-inline-start: 4rem;
+    display: none;
+
+    &.list {
+        display: block;
+    }
+}
+
+.station {
+    transition: transform 0.3s;
+    transform: rotate(0deg);
+}
+
+.rotate {
+    transition: transform 0.3s;
+    transform: rotate(180deg);
 }
