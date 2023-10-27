@@ -1,0 +1,16 @@
+.container {
+    background-color: var(--color-main-primary);
+    //width: 19rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    border: none;
+    gap: 1rem;
+    color: var(--color-main-bg);
+    margin-block: auto;
+}
+
+.container div {
+    margin-block: auto;
+}
