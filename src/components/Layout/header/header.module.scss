@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+}
+
+.container > div:first-child {
+    display: flex;
+    align-items: stretch;
+}
+
+.container > div > div {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container > div > div > input {
+    flex: 1;
+    padding: 0rem 6rem;
+    border: 1px solid #BFBFBF;
+    border-radius: 0.5rem 0 0 0.5rem;
+    width: 35rem;
+    outline: none;
+    height: 100%;
+}
+
+.container > div > div > input:focus {
+    border-color: var(--color-main-primary);
+}
+
+.container > div > div > input::placeholder {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.container > div:first-child > button {
+    padding: 1rem ;
+    background-color: transparent;
+    border: 1px solid #BFBFBF;
+    border-left: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
