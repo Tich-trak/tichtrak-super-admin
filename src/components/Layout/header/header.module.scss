@@ -46,3 +46,19 @@
     border-left: none;
     border-radius: 0 0.5rem 0.5rem 0;
 }
+
+.container div:last-child {
+    display: flex;
+    gap: 2rem;
+    margin-block: auto;
+}
+
+.line {
+    border-left: 1px solid #BFBFBF;
+    height: 3rem;
+}
+
+hr {
+    color: #BFBFBF;
+    font-weight: 100;
+}
