@@ -1,0 +1,20 @@
+.container div {
+    margin-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div > div:first-child {
+    display: flex;
+    margin-block: auto;
+}
+
+.container div > div:first-child > div:last-child {
+    margin-inline-start: 0.4rem;
+    color: #A6A6A6;
+    font-size: 1.3rem;
+}
+
+.container div > div:first-child > div:last-child span {
+    color: var(--color-main-primary);
+}

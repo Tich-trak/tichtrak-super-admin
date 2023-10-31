@@ -2,6 +2,7 @@ import React, { FC } from "react"
 import Header from "../../components/Layout/header/Header"
 import SideBar from "../../components/Layout/sidebar/SideBar"
 import styles from './dashboardLayout.module.scss';
+import Footer from "../../components/Layout/footer/Footer";
 
 interface ComponentProps {
     children?: React.ReactNode;
@@ -19,6 +20,9 @@ const DashboardLayout: FC<ComponentProps> = ({ children }) => {
             <main className={styles.mainContent}>
                 {children}
             </main>
+            <footer className={styles.footer}>
+                <Footer />
+            </footer>
         </section>
     )
 };
