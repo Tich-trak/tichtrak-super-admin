@@ -8,17 +8,13 @@ const Footer = () => {
             <div>
                 <div>
                     <div><Copyright /></div>
-                    <div>2023 - <span>Tichtrak </span> Dashboard</div>
+                    <div>2023 -  <span>Tichtrak</span>Dashboard</div>
                 </div>
-                <div>
-                <nav>
-                <ul>
-                    <li>Home</li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                </nav>
+                <div className={styles.links}>
+                    <span>About</span>
+                    <span>Careers</span>
+                    <span>Policy</span>
+                    <span>Contact</span>
                 </div>
             </div>
         </div>
